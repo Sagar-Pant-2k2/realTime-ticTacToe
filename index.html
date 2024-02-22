@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js" integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1>this is my front end</h1>
+    <h1>Create a Room</h1> <input placeholder="Enter Room Name"/>
+    <h1>Join Room</h1> <input placeholder="Enter Room Name"/>
+
+    <script>
+        const socket = io('http://localhost:3000/');
+        socket.on('connect',()=>{
+            console.log("connected to server",socket.id);
+        })
+    </script>
+   
+    
+</body>
+</html>

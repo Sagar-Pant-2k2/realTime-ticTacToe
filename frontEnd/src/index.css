@@ -1,0 +1,163 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.game-main {
+  font-family: 'Roboto', sans-serif;
+  /* height: 100vh; */
+  height: 100%;
+  width: 100%;
+  color: gold;
+  justify-content: center;
+  background-image: radial-gradient(black,rgb(11, 11, 11)) ;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.home-box {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid greenyellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-box button{
+  background-color: inherit;
+  border: 1px solid gold;
+  color: gold;
+  padding: 10px;
+  font-size: 32px;
+  margin: 10px;
+}
+.home-box button:hover {
+  background-color: gold;
+  color: black;
+}
+
+input {
+  margin: 10px 0px;
+  padding: 5px 15px;
+  border: none;
+  font-size: 28px;
+  border-radius: 5px;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  outline: none;
+}
+
+.warning{
+  color: red;
+}
+
+
+
+.box{
+  border: none;
+  color: white;
+  background-color: inherit;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.turn-status {
+  display: flex;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.turn-status input {
+  margin: 10px;
+  background-color: inherit;
+  color: white;
+  padding: 5px 10px;
+}
+
+.turn-status input.active {
+  border: 2px solid rgb(238, 226, 7);
+}
+
+.game-area {
+  /* background-color: white; */
+  color: white;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  }
+  .game-area h1{
+    margin: 20px;
+  }
+
+
+  
+
+.main-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.511)
+}
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.861);
+  color: black;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+.left-border {
+  border-left: 2px solid white;
+}
+.right-border {
+  border-right: 2px solid white;
+}
+
+.upper-border {
+  border-top: 2px solid white;
+}
+
+.lower-border {
+  border-bottom: 2px solid white;
+}
+
+.replay-button{
+  padding: 10px;
+  background-color: goldenrod;
+  font-size: 24px;
+  border-radius: 2px;
+}
